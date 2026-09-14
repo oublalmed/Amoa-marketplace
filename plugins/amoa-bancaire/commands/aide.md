@@ -23,6 +23,7 @@ Affiche le mode d'emploi du plugin, sans rien inventer au-delà de ce qui suit.
 
 | Agent | Usage |
 |---|---|
+| `@amoa-bancaire:preparateur-atelier` | Préparation d'atelier **avant** la séance : questions bloquantes, hypothèses implicites, collisions avec ce qui est tranché |
 | `@amoa-bancaire:verificateur-tracabilite` | Contrôle de couverture besoin → exigence → règle → test |
 | `@amoa-bancaire:relecteur-conformite` | Relecture réglementaire, écarts notés Bloquant / Majeur / Mineur |
 | `@amoa-bancaire:expert-monetique` | Relecture ou diagnostic monétique |
@@ -33,7 +34,8 @@ En chat, ces agents apparaissent grisés. Les skills et les commandes fonctionne
 ## Enchaînement recommandé
 
 1. `/contexte` une fois par mission, résultat déposé dans le Projet
-2. `/spec` ou `/recette` pour produire
-3. Dans Cowork, les deux ou trois agents en relecture avant envoi
+2. `preparateur-atelier` avant chaque séance métier ; `/atelier` après, pour le compte rendu
+3. `/spec` ou `/recette` pour produire
+4. Dans Cowork, les deux ou trois relecteurs avant envoi
 
 Rappelle ensuite à l'utilisateur qu'il peut demander n'importe quel livrable en langage naturel : les commandes sont des raccourcis, pas une obligation.

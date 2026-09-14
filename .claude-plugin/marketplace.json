@@ -8,7 +8,7 @@
       "name": "amoa-bancaire",
       "source": "./plugins/amoa-bancaire",
       "description": "Livrables AMOA / Business Analyst pour projets bancaires : specifications, recette, BPMN, monetique, SQL et PL/SQL.",
-      "version": "1.3.0",
+      "version": "1.4.0",
       "category": "productivity",
       "tags": ["amoa", "banque", "monetique", "sql", "bpmn"]
     }

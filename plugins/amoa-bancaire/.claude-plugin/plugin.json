@@ -2,10 +2,12 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "amoa-bancaire",
   "displayName": "AMOA Bancaire",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Livrables AMOA / Business Analyst pour projets bancaires au standard cabinet de conseil, avec expertise monetique et SQL / PL-SQL : specifications, plans de recette, BPMN, analyses de processus, ateliers, tracabilite, flux cartes, reconciliation, requetes et modeles de donnees.",
   "keywords": [
     "amoa",
+    "atelier",
+    "cadrage",
     "business-analyst",
     "banque",
     "core-banking",

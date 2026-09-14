@@ -23,12 +23,13 @@ Livrables AMOA / Business Analyst pour projets bancaires, au standard cabinet de
 | Commande | `/atelier` | Compte rendu d'atelier métier |
 | Commande | `/bpmn` | Modélisation BPMN avec swimlanes |
 | Commande | `/aide` | Mode d'emploi |
+| Sub-agent | `preparateur-atelier` | Préparation d'atelier en amont : questions bloquantes, hypothèses implicites |
 | Sub-agent | `relecteur-conformite` | Relecture réglementaire, écarts notés |
 | Sub-agent | `verificateur-tracabilite` | Couverture besoin → exigence → règle → test |
 | Sub-agent | `expert-monetique` | Relecture et diagnostic monétique |
 | Sub-agent | `expert-sql` | Relecture SQL / PL/SQL : exactitude, sécurité, performance |
 
-Les deux skills se déclenchent seuls et se combinent. Les commandes sont des raccourcis, jamais une obligation.
+Les trois skills se déclenchent seuls et se combinent. Quatre sub-agents relisent en aval ; `preparateur-atelier` est le seul à intervenir en amont, avant que le livrable existe. Les commandes sont des raccourcis, jamais une obligation.
 
 ## Installation
 
@@ -83,3 +84,4 @@ Puis dans Cowork, avant envoi :
 | 1.1.0 | Ajout du skill monétique et du sub-agent expert-monetique |
 | 1.2.0 | Chemins de référence fiabilisés, commandes `/contexte` et `/aide`, modes de défaillance, limites documentées |
 | 1.3.0 | Ajout du skill `sql-donnees` et du sub-agent `expert-sql` |
+| 1.4.0 | Ajout du sub-agent `preparateur-atelier`, premier agent en amont de la production |
